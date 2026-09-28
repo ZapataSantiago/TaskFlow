@@ -1,0 +1,23 @@
+{
+  "name": "taskflow",
+  "private": true,
+  "packageManager": "pnpm@12.6.0",
+  "scripts": {
+    "dev:mobile": "turbo run dev --filter=mobile",
+    "dev:desktop": "turbo run dev --filter=desktop",
+    "build": "turbo run build typecheck",
+    "lint": "turbo run lint",
+    "format": "prettier --write ."
+  },
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "prettier": "^3.9.9",
+    "turbo": "^2.11.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.1"
+  }
+}
